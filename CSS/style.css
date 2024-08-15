@@ -1,0 +1,318 @@
+/* Reset and Basic Styling */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5e3c3;
+}
+
+h2 {
+    color: white;
+}
+
+/* Small Banner */
+.banner {
+    background-color: #8b5e3c;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    z-index: 1000;
+}
+
+.banner h2 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.banner p {
+    margin: 10px 0;
+}
+
+.banner form {
+    margin: 10px 0;
+}
+
+.banner input[type="email"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.banner label {
+    font-size: 0.9rem;
+}
+
+.banner button {
+    padding: 10px 20px;
+    background-color: #f5e3c3;
+    color: #8b5e3c;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.banner button:hover {
+    background-color: #a67c52;
+}
+
+.close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: white;
+}
+
+/* Navbar Styling */
+#navbar {
+    background-color: #f5e3c3;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#navbar ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#navbar ul li {
+    margin: 0 15px;
+}
+
+#navbar ul li a {
+    text-decoration: none;
+    color: #8b5e3c;
+    font-size: 1.1rem;
+}
+
+#navbar ul li a:hover {
+    color: #a67c52;
+}
+
+/* Navigation Bar Social Media Icons */
+.social-media {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icon {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+}
+
+.social-icon img {
+    width: 24px; /* Adjust size as needed */
+    height: 24px; /* Adjust size as needed */
+    margin-right: 8px; /* Space between icon and text */
+}
+
+.social-text {
+    font-size: 14px; /* Adjust size as needed */
+    color: #a67c52;; /* Text color */
+}
+
+/* Carousel Container Styling */
+.carousel-container {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    padding-top: 56.25%; /* This ratio (16:9) maintains the aspect ratio for most images */
+    overflow: hidden;
+    margin: 20px;
+    background-color: #f5e3c3;
+}
+
+/* Flexbox Container for Carousel Images */
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Ensure Carousel Images Adapt to Screen Size */
+.carousel img {
+    flex: 0 0 98%;
+    width: 100%;
+    height: 125%;
+    object-fit: cover; /* Ensures images cover the container while maintaining aspect ratio */
+    display: block;
+}
+
+/* Product List Styling */
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.product {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.product h3 {
+    margin: 10px 0;
+    font-size: 1.2rem;
+    color: #8b5e3c;
+}
+
+.product p {
+    margin: 5px 0;
+    font-size: 1rem;
+}
+
+.product a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 15px;
+    background-color: #8b5e3c;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.product a:hover {
+    background-color: #a67c52;
+}
+
+.product:hover {
+    transform: scale(1.05);
+}
+
+/* About and Contact Sections */
+#about, #contact {
+    padding: 50px 20px;
+    background-color: #f5e3c3;
+    text-align: center;
+}
+
+#about h2, #contact h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #8b5e3c;
+}
+
+#about p, #contact p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* Contact Form Styling */
+#contact-form input[type="text"],
+#contact-form input[type="email"],
+#contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#contact-form button {
+    padding: 10px 20px;
+    background-color: #8b5e3c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#contact-form button:hover {
+    background-color: #a67c52;
+}
+
+/* Modal Styling */
+.modal {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+    z-index: 1001;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    position: relative;
+}
+
+.modal .close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 1.5rem;
+    color: #aaa;
+    cursor: pointer;
+}
+
+.modal .close:hover {
+    color: #000;
+}
+
+/* Media Queries for Responsive Design */
+@media (min-width: 1200px) {
+    .carousel-container {
+        padding-top: 50%; /* Adjust for larger screens if needed */
+    }
+}
+
+@media (max-width: 768px) {
+    .carousel-container {
+        padding-top: 75%; /* Adjust for smaller screens */
+    }
+
+    #navbar ul {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    #navbar ul li {
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .carousel-container {
+        padding-top: 100%; /* Square aspect ratio for very small screens */
+    }
+
+    #navbar ul {
+        padding: 15px;
+    }
+}
