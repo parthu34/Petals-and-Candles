@@ -3,17 +3,17 @@ body, html {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background-color: #f5e3c3;
+    background-color: #fae4ea;
 }
 
 h2 {
-    color: white;
+    color: rgb(12, 12, 12);
 }
 
 /* Small Banner */
 .banner {
-    background-color: #8b5e3c;
-    color: white;
+    background-color: white;
+    color: rgb(3, 3, 3);
     text-align: center;
     padding: 20px;
     position: relative;
@@ -46,7 +46,7 @@ h2 {
 
 .banner button {
     padding: 10px 20px;
-    background-color: #f5e3c3;
+    background-color: #fae4ea;
     color: #8b5e3c;
     border: none;
     border-radius: 5px;
@@ -69,7 +69,7 @@ h2 {
 
 /* Navbar Styling */
 #navbar {
-    background-color: #f5e3c3;
+    background-color: #fae4ea;
     padding: 10px;
     position: sticky;
     top: 0;
@@ -132,7 +132,7 @@ h2 {
     padding-top: 56.25%; /* This ratio (16:9) maintains the aspect ratio for most images */
     overflow: hidden;
     margin: 20px;
-    background-color: #f5e3c3;
+    background-color: #fae4ea;
 }
 
 /* Flexbox Container for Carousel Images */
@@ -209,7 +209,7 @@ h2 {
 /* About and Contact Sections */
 #about, #contact {
     padding: 50px 20px;
-    background-color: #f5e3c3;
+    background-color: #fae4ea;
     text-align: center;
 }
 
